@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Select Option Dynamic
+	</title>
+
+
+<style>
+	
+
+
+
+
+
+</style>
+
+
+
+</head>
+<body>
+<h1>  choose your District Name </h1>
+<hr/>
+<select id="slct1" name="slct1"  onChange="populate(this.id,'sltc2')">
+	<option value=""></option>
+
+<option value="Jamalpur">Jamalpur</option>
+
+
+<option value="Tangail">Tangail</option>
+<option value="Tangail">Tangail</option>
+
+
+</select>
+
+
+
+
+
+
+<h1>  choose your car </h1>
+<hr/>
+Choose your car Thana Name:
+<select id="slct2"  name="slct2">
+
+
+
+
+</select>
+
+
+
+
+
+
+
+<script>
+ 	
+function populate(s1,s2){
+
+var s1 = document.getElementById("s1");
+
+
+var s1 = document.getElementById("s2");
+
+if(s1.value == "Jamalpur"){
+
+var optionArray = ["|", "camaro|Camaro", "corvette|Corvette", "impala|Impala"];
+
+
+
+}
+
+for( var option in optionArray){
+
+var pair = optionArray[option].split("|");
+
+var newOption = document.createElement("Option");
+
+newOption.value = pair[0];
+newOption.innerHTML = pair[1];
+s2.options.add(newoption);
+}
+
+
+}
+
+
+
+	
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
